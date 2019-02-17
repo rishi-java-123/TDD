@@ -9,11 +9,12 @@ public class CheckISBN {
 			for (int i = 0; i < 13; i++) {
 				if (i % 2 == 0) {
 					total += Character.getNumericValue(isbn.charAt(i));
-				} else {
+				}
+				else {
 					total += Character.getNumericValue(isbn.charAt(i)) * 3;
 				}
 			}
-
+			
 			if (total % 10 == 0) {
 				return true;
 			} else {
